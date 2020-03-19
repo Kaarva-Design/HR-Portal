@@ -1,0 +1,414 @@
+:root {
+  --brand-color: #e81d61;
+  --dark-color: #161c2d;
+  --grey-color: #696969;
+  --lightgrey-color: #f9fbfd;
+}
+
+@font-face {
+  font-family: light;
+  src: url(../typeface/Gilroy-Light.otf);
+}
+
+@font-face {
+  font-family: regular;
+  src: url(../typeface/Gilroy-Regular.ttf);
+}
+
+@font-face {
+  font-family: medium;
+  src: url(../typeface/Gilroy-Medium.otf);
+}
+
+@font-face {
+  font-family: semibold;
+  src: url(../typeface/Gilroy-SemiBold.ttf);
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: var(--dark-color);
+	text-rendering: auto;
+}
+
+html{
+	height: 100%
+}
+
+body{
+	height: 100%;
+	line-height: 2.8em;
+	font-family: regular;
+}
+
+h1{
+	font-family: medium;
+	font-weight: normal;
+	font-size: 20px;
+	color: #767676;
+	line-height: 32px;
+	letter-spacing: normal;
+}
+
+h2{
+	font-family: regular;
+	font-weight: normal;
+	color: #323941;
+	letter-spacing: normal;
+	font-size: 22px;
+}
+
+h3{
+	font-family: medium;
+	font-weight: normal;
+	font-size: 16px;
+	color: var(--grey-color);
+}
+
+h5{
+	font-family: medium;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 24px;
+	color: #767676;
+	margin-top: 80px;
+}
+
+#logo{
+	height: 36px;
+	padding-bottom: 4px;
+}
+
+.flex{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+input{
+	display: block;
+	border:none;
+	border-bottom: 1px solid #DEDEDE;
+	height: auto;
+	font-size: 18px;
+	min-width: 350px;
+	padding: 12px 25px;
+	padding-left: 0px;
+	margin-bottom: 50px;
+	font-family: semibold;
+}
+
+input:after {
+    content:"";
+    background: linear-gradient(to right, #E81D61, #C40B91);
+    display: block;
+    height:10px;
+    width: 500px;
+    position: absolute;
+    bottom: 0;
+}
+
+a{
+	text-decoration: none;
+	color: #0069ff;
+}
+
+.inputwrapper{
+	position: relative;
+}
+
+form{
+
+}
+
+.inputwrapper label{
+	position: absolute;
+	bottom: 30px;
+	font-size: 14px;
+	color: #AEAEAE;
+}
+
+button{
+	padding: 12px 0px;
+	min-width: 150px;
+	font-family: medium;
+	font-size: 16px;
+	border: none;
+	color: white;
+	background-image: linear-gradient(to right, #E81D61, #C40B91);
+	border-radius: 6px;
+}
+
+.flexform{
+	margin-top:25px;
+	margin-bottom: 45px;
+	color: #161c2d;
+	font-size: 14px;
+	font-family: medium;
+}
+
+#loginwrapper {
+	display: flex;
+}
+
+#login_left{
+	width: 60%;
+	display: flex;
+}
+
+#login_left--wrapper{
+	padding: 75px 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+#login_right{
+	width: 40%;
+	height: 100vH;
+	background-image: url(../images/test.jpg);
+	background-repeat: no-repeat;
+	background-position: center; 
+	background-size: cover;
+}
+
+.button--no-style{
+	border: 1px solid #C5C5C5;
+	color: #161c2d;
+	background-color: white;
+	background-image: none;
+}
+
+input[type=checkbox] + label {
+  display: block;
+  margin: 0.2em;
+  cursor: pointer;
+  padding: 0.2em;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox] + label:before {
+  content: "\2714";
+  border: 0.1em solid #000;
+  border-radius: 0.2em;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  padding-left: 0.2em;
+  padding-bottom: 0.3em;
+  margin-right: 10px;
+  vertical-align: bottom;
+  color: transparent;
+  transition: .2s;
+}
+
+input[type=checkbox] + label:active:before {
+  transform: scale(0);
+}
+
+input[type=checkbox]:checked + label:before {
+  background-color: MediumSeaGreen;
+  border-color: MediumSeaGreen;
+  color: #fff;
+}
+
+input[type=checkbox]:disabled + label:before {
+  transform: scale(1);
+  border-color: #aaa;
+}
+
+input[type=checkbox]:checked:disabled + label:before {
+  transform: scale(1);
+  background-color: #bfb;
+  border-color: #bfb;
+}
+
+/*dashboard style*/
+
+#dashboardwrapper{
+	padding: 25px 50px;
+}
+
+#logout{
+	margin-left: auto;
+	font-family: medium;
+}
+
+header{
+	display: flex;
+	align-items: center;
+}
+
+#greeting{
+	font-size: 18px;
+	color: #161c2d;
+	font-family: medium;
+	line-height: normal;
+
+}
+
+#greetingemail{
+	font-family: regular;
+	font-size: 14px;
+	color: #696969;
+}
+
+#viewheading{
+	font-size: 24px;
+	color: #161c2d;
+	font-family: medium;
+	padding: 0px 40px;
+	line-height: normal;
+
+}
+
+#viewheader{
+	padding-bottom: 15px;
+	border-bottom: 1px solid #d3d3d3;
+}
+
+#viewheading--supportingtext{
+	line-height: 30px;
+	font-family: regular;
+	font-size: 15px;
+	color: #696969;
+	padding: 0px 40px;
+}
+
+#dashboardmain--left{
+	width: 20%;
+	border-right: 1px solid #d3d3d3;
+}
+
+#dashboardmain--right{
+	width: 80%;
+}
+
+#dashboardmainwrapper{
+	padding-top: 50px;
+	display: flex;
+}
+
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul li{
+	padding: 2px 25px;
+	margin-bottom:5px;
+	font-size: 14px;
+	font-family: medium;
+}
+
+ul li:hover{
+	background-color: #F5F7FC;
+}
+
+.list--active{
+	background-color: #F5F7FC;
+	border-right: 4px solid #e81d61;
+}
+
+#navitems--actions{
+	margin-top: 35px;
+}
+
+#dashboardmain--right{
+	/*padding: 0px 45px;*/
+}
+
+#navitems--profile, #navitems--logout{
+	border-top: 1px solid #d3d3d3;
+	padding: 5px 0px;
+}
+
+#navitems--profile{
+	margin-top: 200px;
+}
+
+#links{
+	display: flex;
+	margin-right: auto;
+	margin-left: 50px;
+}
+
+#links div{
+	margin-right: 45px;
+	font-size: 14px;
+	color: #696969;
+	font-family: medium;
+}
+
+#links div:hover{
+	color: #161c2d;
+}
+
+.links--active{
+	color: #161c2d !important;
+}
+
+#viewcontentwrapper{
+	padding: 20px 40px;
+}
+
+#create_user, #list_employers{
+	display: none;
+	margin-top: 30px;
+}
+
+#create_user--button{
+	margin-top: 35px;
+	background-image: none;
+	background-color: #00d09c;
+	min-width: 175px;
+}
+
+.active{
+	display: block !important;
+}
+
+.tablerounededCorner {
+    border: 1px solid #7a7b7b;
+    background-color: #F5F7FC;
+    border-radius: 6px;
+}
+
+.roundedTable {
+    border-collapse: collapse;
+    border-radius: 6px;
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+}
+
+.roundedTable td {
+    padding: 8px 20px;
+    background: #f9fbfdc2;
+    border-bottom: 2px solid white;
+}
+
+.roundedTable th{
+	padding: 8px 20px;
+    background: #F5F6F9;
+    border-bottom: 2px solid white;
+    color: #161c2d;
+    font-size: 14px;
+    font-weight: medium;
+}
+
+.roundedTable th {
+    text-align: left;
+}
+
+.roundedTable tr:last-child td {
+    border-bottom: none;
+}
+
+/*dashboard style*/
