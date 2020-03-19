@@ -6,6 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script type="text/javascript" src="http://livejs.com/live.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link rel="icon" type="image/png" href="assets/images/fav.png">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/notify/0.4.2/notify.js"></script>
 </head>
 <body>
 	<div id="dashboardwrapper">
@@ -50,13 +52,13 @@
 							<form>
 								<div class="inputwrapper">
 									<label for="username">Email</label>
-									<input id="username" placeholder="amit@asiantpaints.com" />
+									<input id="createuseremail" placeholder="amit@asiantpaints.com" />
 								</div>
 								<div class="inputwrapper">
 									<label for="password">Password</label>
-									<input id="password" placeholder="" type="password" style="margin-bottom: 0px;" />
+									<input id="createuserpassword" placeholder="&#183&#183&#183&#183&#183&#183&#183&#183&#183&#183&#183&#183&#183&#183" type="password" style="margin-bottom: 0px;" />
 								</div>
-								<button id="create_user--button">Create User</button>
+								<button id="create_user--button" disabled="disabled">Create User</button>
 							</form>	
 						</div>
 						<div id="list_employers" style="margin-top: 15px">

@@ -35,7 +35,28 @@ $( ".logout" ).click(function() {
 	window.open("index.html" , "_self"); 
 });
 
-$( "button" ).click(function() {
+$( "button" ).click(function() {	
 	event.preventDefault();
 });
 
+$( "input" ).click(function() {
+	$(this).addClass("inputactive");
+});
+$( "input" ).keyup(function() {
+	$(this).addClass("inputactive");
+});
+
+$("#createuserpassword").keyup(function () {
+      $('#create_user--button').removeAttr("disabled")
+});
+
+$( "#create_user--button" ).click(function() {
+	 $.notify(
+  "User successfully created!", "success",
+  { position:"bottom centerr" }
+);
+});
+
+$( "#login--button" ).click(function() {
+	window.open("dashboard.html" , "_self"); 
+});
