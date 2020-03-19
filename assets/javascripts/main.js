@@ -60,3 +60,7 @@ $( "#create_user--button" ).click(function() {
 $( "#login--button" ).click(function() {
 	window.open("dashboard.html" , "_self"); 
 });
+
+$( "#forgotpass" ).click(function() {
+	window.open("resetpass.html" , "_self"); 
+});
